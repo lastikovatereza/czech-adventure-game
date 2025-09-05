@@ -19,7 +19,6 @@ class Hra:
     # Uložení aktuální lokace
     aktualni_lokace = dum
 
-    # Zde dokonči úlohu svým kódem...
     def __init__(self):
         self.hrad.vychod = self.les1
         self.les1.zapad = self.hrad
@@ -74,4 +73,5 @@ class Hra:
         print(self.aktualni_lokace.nazev)
         print(self.aktualni_lokace.popis)
         dostupne = self.aktualni_lokace.dostupne_smer()
+
         print("\nMůžeš jít na " + " ".join(dostupne))
