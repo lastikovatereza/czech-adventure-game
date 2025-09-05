@@ -5,8 +5,6 @@ class Lokace:
     # Lokace na jihu
     jih = None
 
-    # Zde dokonči úlohu svým kódem...
-
     def __init__(self, nazev, popis):
         self.nazev = nazev
         self.popis = popis
@@ -21,4 +19,5 @@ class Lokace:
         if self.jih: smery.append("jih")
         if self.vychod: smery.append("východ")
         if self.zapad: smery.append("západ")
+
         return smery
